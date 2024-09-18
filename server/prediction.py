@@ -51,4 +51,8 @@ def predict(data: InputData):
     # Return the prediction as a JSON response
     return {"predicted_live": float(prediction[0][0])}
 
+@app.get("/")
+def testing():
+    return {"Hello":"Therer"}
+
 # To run the API, use the following command: `uvicorn filename:app --reload`
